@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
+    <title>AWS DevOps Dashboard</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        .navbar {
+
+            background: #111827;
+
+            padding: 20px 40px;
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .logo {
+
+            font-size: 28px;
+
+            font-weight: bold;
+
+            color: #38bdf8;
+        }
+
+        .hero {
+
+            text-align: center;
+
+            padding: 70px 20px;
+        }
+
+        .hero h1 {
+
+            font-size: 55px;
+
+            color: #38bdf8;
+
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+
+            font-size: 22px;
+
+            color: #cbd5e1;
+        }
+
+        .tech-stack {
+
+            margin-top: 30px;
+        }
+
+        .tech-stack span {
+
+            background: #1e293b;
+
+            padding: 12px 18px;
+
+            margin: 5px;
+
+            display: inline-block;
+
+            border-radius: 30px;
+
+            font-size: 14px;
+        }
+
+        .container {
+
+            width: 85%;
+
+            margin: auto;
+
+            margin-top: 40px;
+        }
+
+        .section-title {
+
+            margin-bottom: 25px;
+
+            color: #38bdf8;
+
+            font-size: 34px;
+        }
+
+        .form-box {
+
+            background: #1e293b;
+
+            padding: 25px;
+
+            border-radius: 15px;
+
+            margin-bottom: 40px;
+        }
+
+        .form-box form {
+
+            display: flex;
+
+            gap: 15px;
+        }
+
+        .form-box input {
+
+            flex: 1;
+
+            padding: 15px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #334155;
+
+            color: white;
+
+            font-size: 16px;
+        }
+
+        .form-box button {
+
+            padding: 15px 25px;
+
+            border: none;
+
+            border-radius: 10px;
+
+            background: #38bdf8;
+
+            color: black;
+
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        .cards {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+            gap: 25px;
+        }
+
+        .card {
+
+            background: #1e293b;
+
+            padding: 25px;
+
+            border-radius: 16px;
+
+            transition: 0.3s;
+
+            border: 1px solid transparent;
+        }
+
+        .card:hover {
+
+            transform: translateY(-5px);
+
+            border-color: #38bdf8;
+        }
+
+        .card h2 {
+
+            color: #38bdf8;
+
+            margin-bottom: 15px;
+        }
+
+        .card p {
+
+            color: #cbd5e1;
+
+            line-height: 1.6;
+        }
+
+        .status {
+
+            display: inline-block;
+
+            margin-top: 18px;
+
+            background: #22c55e;
+
+            color: black;
+
+            padding: 8px 15px;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+        }
+
+        .actions {
+
+            margin-top: 20px;
+        }
+
+        .actions a {
+
+            text-decoration: none;
+
+            padding: 10px 16px;
+
+            border-radius: 8px;
+
+            margin-right: 10px;
+
+            font-weight: bold;
+
+            display: inline-block;
+        }
+
+        .edit-btn {
+
+            background: orange;
+
+            color: white;
+        }
+
+        .delete-btn {
+
+            background: crimson;
+
+            color: white;
+        }
+
+        .footer {
+
+            margin-top: 80px;
+
+            text-align: center;
+
+            padding: 30px;
+
+            border-top: 1px solid #1e293b;
+
+            color: #94a3b8;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <div class="logo">
+            🚀 DevOps Dashboard
+        </div>
+
+        <div>
+            AWS ECS Deployment
+        </div>
+
+    </div>
+
+    <section class="hero">
+
+        <h1>
+            Hello Welcome to DevOps Journey !!
+        </h1>
+
+        <p>
+            This is AWS ECR ECS Deploy Project
+        </p>
+
+        <div class="tech-stack">
+
+            <span>Node.js</span>
+
+            <span>Docker</span>
+
+            <span>AWS ECS</span>
+
+            <span>AWS ECR</span>
+
+            <span>CloudWatch</span>
+
+            <span>Jenkins</span>
+
+        </div>
+
+    </section>
+
+    <div class="container">
+
+        <h2 class="section-title">
+            🚀 Deployment Services
+        </h2>
+
+        <div class="form-box">
+
+            <form action="/dashboard/add/"
+                  method="POST">
+
+                <input type="text"
+                       name="newtodo"
+                       placeholder="Add new AWS service..." />
+
+                <button type="submit">
+                    Add Service
+                </button>
+
+            </form>
+
+        </div>
+
+        <div class="cards">
+
+            <% todolist.forEach(function(todo, index) { %>
+
+                <div class="card">
+
+                    <h2>
+                        ☁️ <%= todo %>
+                    </h2>
+
+                    <p>
+                        AWS DevOps deployment service
+                        connected with containerized
+                        Node.js infrastructure.
+                    </p>
+
+                    <div class="status">
+                        Active
+                    </div>
+
+                    <div class="actions">
+
+                        <a class="edit-btn"
+                           href="/dashboard/<%= index %>">
+
+                            Edit
+
+                        </a>
+
+                        <a class="delete-btn"
+                           href="/dashboard/delete/<%= index %>">
+
+                            Delete
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            <% }) %>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        Built with ❤️ using Node.js + Docker + AWS ECS + ECR
+
+    </div>
+
+</body>
+
+</html>

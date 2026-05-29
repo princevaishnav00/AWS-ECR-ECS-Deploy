@@ -1,14 +1,29 @@
 {
-  "name": "nodejs-aws-app",
+  "name": "aws-devops-dashboard",
+
   "version": "1.0.0",
-  "main": "src/index.js",
+
+  "description": "AWS ECR ECS Deployment Dashboard Project",
+
+  "main": "app.js",
+
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
+
+  "author": "Prince",
+
+  "license": "MIT",
+
   "dependencies": {
-    "express": "^4.18.2"
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "sanitizer": "^0.1.3"
   },
+
   "devDependencies": {
     "nodemon": "^3.0.1"
   }
