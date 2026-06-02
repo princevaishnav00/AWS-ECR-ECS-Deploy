@@ -51,3 +51,20 @@ jobs:
           service: dashboard-service
           cluster: dashboard-cluster
           wait-for-service-stability: true
+
+
+      - name: Send SNS Notification
+        run: |
+          aws sns publish \
+                --topic-arn "${{ secrets.SNS_TOPIC_ARN }}" \
+                --subject "Deployment Successful" \
+                --message "
+                Deployment Status: SUCCESS
+
+                Repository: ${{ github.repository }}
+                Branch: ${{ github.ref_name }}
+                Commit: ${{ github.sha }}
+                Cluster: dashboard-cluster
+                Service: dashboard-service
+
+                Deployment completed successfully."
