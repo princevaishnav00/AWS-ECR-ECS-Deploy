@@ -1,8 +1,6 @@
 # 🚀 AWS ECR-ECS Fargate Deployment with CI/CD
 
-This project demonstrates an end-to-end CI/CD pipeline using GitHub Actions, Docker, Amazon ECR, Amazon ECS Fargate, CloudWatch and Amazon SNS.
-
-The pipeline automatically builds, stores and deploys containerized applications to AWS ECS whenever code is pushed to GitHub.
+This project demonstrates how a containerized application can be automatically built, stored, deployed and monitored on AWS using modern DevOps practices. The entire deployment process is triggered by a GitHub push and managed through a CI/CD pipeline powered by GitHub Actions.
 
 ---
 
