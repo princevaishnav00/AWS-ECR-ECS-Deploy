@@ -3,6 +3,7 @@
 ![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub_Actions-blue)
 ![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
 ![AWS](https://img.shields.io/badge/AWS-ECS_Fargate-orange)
+![AWS](https://img.shields.io/badge/AWS-ECR-orange)
 
 This project demonstrates how a containerized application can be automatically built, stored, deployed and monitored on AWS using modern DevOps practices. The entire deployment process is triggered by a GitHub push and managed through a CI/CD pipeline powered by GitHub Actions.
 
