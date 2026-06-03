@@ -6,26 +6,20 @@
 ![AWS](https://img.shields.io/badge/AWS-ECR-orange)
 
 Built an end-to-end CI/CD pipeline that automates the deployment of a containerized Node.js application—from GitHub code push and Docker image build to Amazon ECR image storage, Amazon ECS Fargate deployment, CloudWatch monitoring, and deployment notifications via Amazon SNS.
+
 ---
 
 ## 🛠️ Tech Stack & Tools :
 
 
-### Application
-- Node.js
-
-### CI/CD
-- GitHub Actions
-
-### Containerization
-- Docker
-
-### AWS Services
-- Amazon ECR
-- Amazon ECS Fargate
-- Amazon CloudWatch
-- Amazon SNS
-- IAM
+Node.js
+Docker
+GitHub Actions
+Amazon ECR
+Amazon ECS Fargate
+CloudWatch
+Amazon SNS
+IAM
 
 ---
 
