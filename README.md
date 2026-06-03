@@ -1,5 +1,9 @@
 # 🚀 AWS ECR-ECS Fargate Deployment with CI/CD
 
+![GitHub Actions](https://img.shields.io/badge/CI/CD-GitHub_Actions-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![AWS](https://img.shields.io/badge/AWS-ECS_Fargate-orange)
+
 This project demonstrates how a containerized application can be automatically built, stored, deployed and monitored on AWS using modern DevOps practices. The entire deployment process is triggered by a GitHub push and managed through a CI/CD pipeline powered by GitHub Actions.
 
 ---
@@ -27,7 +31,7 @@ This project demonstrates how a containerized application can be automatically b
 
 ---
 
-## ✅️ Deploy Successfull :
+## ✅️ Deployment Successful :
 
 <p align="center">
   <img src="./Screenshots/Application.png" alt="Architecture Diagram" width="800"/>
@@ -82,6 +86,19 @@ For a single application deployment, ECS is simpler and faster to manage.
 - ECS Task Definition File Missing
 - Container Name Mismatch
 - ECS Service Not Found
+- SNS Notification Configuration
+
+---
+
+## ✨ Key Features
+
+- Automated CI/CD using GitHub Actions
+- Dockerized application deployment
+- Amazon ECR image management
+- Amazon ECS Fargate deployment
+- CloudWatch log monitoring
+- SNS email notifications
+
 ---
 
 ## ⭐ Conclusion :
