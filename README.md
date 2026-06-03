@@ -11,9 +11,17 @@ This project demonstrates how a containerized application can be automatically b
 
 ## 🛠️ Tech Stack & Tools :
 
-- GitHub
+
+### Application
+- Node.js
+
+### CI/CD
 - GitHub Actions
+
+### Containerization
 - Docker
+
+### AWS Services
 - Amazon ECR
 - Amazon ECS Fargate
 - Amazon CloudWatch
