@@ -24,7 +24,7 @@ The pipeline automatically builds, stores and deploys containerized applications
 
 
 <p align="center">
-  <img src="./Screenshots/Architecture Diagram" alt="Architecture Diagram" width="800"/>
+  <img src="./Screenshots/Architecture Diagram.png" alt="Architecture Diagram" width="800"/>
 </p>
 
 ---
