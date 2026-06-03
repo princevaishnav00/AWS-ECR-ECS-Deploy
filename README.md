@@ -19,6 +19,16 @@ The pipeline automatically builds, stores and deploys containerized applications
 
 ---
 
+## 🏗️ Application Architecture :
+
+
+
+<p align="center">
+  <img src="./Screenshots/Architecture Diagram" alt="Architecture Diagram" width="800"/>
+</p>
+
+---
+
 ## ⚙️ CI/CD Workflow :
 
 1. Developer pushes code to GitHub
