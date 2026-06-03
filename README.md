@@ -5,8 +5,7 @@
 ![AWS](https://img.shields.io/badge/AWS-ECS_Fargate-orange)
 ![AWS](https://img.shields.io/badge/AWS-ECR-orange)
 
-This project demonstrates how a containerized application can be automatically built, stored, deployed and monitored on AWS using modern DevOps practices. The entire deployment process is triggered by a GitHub push and managed through a CI/CD pipeline powered by GitHub Actions.
-
+Built an end-to-end CI/CD pipeline that automates the deployment of a containerized Node.js application—from GitHub code push and Docker image build to Amazon ECR image storage, Amazon ECS Fargate deployment, CloudWatch monitoring, and deployment notifications via Amazon SNS.
 ---
 
 ## 🛠️ Tech Stack & Tools :
