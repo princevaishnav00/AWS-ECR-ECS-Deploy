@@ -27,6 +27,13 @@ This project demonstrates how a containerized application can be automatically b
 
 ---
 
+## ✅️ Deploy Successfull :
+
+<p align="center">
+  <img src="./Screenshots/Application.png" alt="Architecture Diagram" width="800"/>
+</p>
+
+
 ## ⚙️ CI/CD Workflow :
 
 1. Developer pushes code to GitHub
